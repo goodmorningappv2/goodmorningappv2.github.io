@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Morning</title>
+    <link rel="shortcut icon" href="img/tea.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="topbar hidden">
+            <div id="message"><img id="return_arrow" src="img/arrow.png" draggable="false"><input type="text" id="search_box" placeholder="Station.." enterkeyhint="enter"></div>
+        </div>
+        <div class="train_stations hidden">
+            <div id="train_stations_tables">
+                <select name="stations" id="station_options" size="5">
+                </select>
+            </div>
+        </div>
+        <div class="train hidden">
+            <table class="train_table" style="height: 90%;">
+                <tr>
+                    <th>Deprture</th>
+                    <th>Type</th>
+                    <th>Towards</th>
+                    <th>Operator</th>
+                    <th>Platform</th>
+                    <th>Delay</th>
+                </tr>
+
+                <tbody id="train_values">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="main_2.js" defer></script>
+</body>
+</html>

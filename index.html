@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Morning</title>
+    <link rel="shortcut icon" href="img/tea.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="topbar hidden">
+            <div id="message"> <span id="text"></span></div>
+            <div id="switch"><img class="location_img" src="img/location.png" alt="location" draggable="false"></div>
+        </div>
+        <div class="weather hidden" id="weather_box">
+            <div id="weather_img"><img id="weather_icon" draggable="false"></div>
+            <div id="weather_table">
+                <table>
+                    <tr class="table_name">
+                        <td>Temp</td>
+                        <td>Wind Spe</td>
+                    </tr>
+                    <tr>
+                        <td><span class="table_value" id="temp_value"></span></td>
+                        <td><span class="table_value" id="windspeed_value"></span></td>
+                    </tr>
+                    <tr class="table_name">
+                        <td>Feels Like</td>
+                        <td>Wind Dir</td>
+                    </tr>
+                    <tr>
+                        <td><span class="table_value" id="feelslike_value">/span></td>
+                        <td><img src="img/arrow.png" id="arrow"><span class="table_value" id="winddirection_value" draggable="false"></span></td>
+                    </tr>
+                    <tr class="table_name">
+                        <td id="rain_name">Rain</td>
+                        <td>Humidity</td>
+                    </tr>
+                    <tr>
+                        <td><span class="table_value" id="rain_value"></span></td>
+                        <td><span class="table_value" id="humidity_value"></span></td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="train hidden" id="train_box">
+            <table class="train_table" style="height: 90%;">
+                <tr><th id="location_name"></th></tr>
+                <tr>
+                    <th>Deprture</th>
+                    <th>Type</th>
+                    <th>Towards</th>
+                    <th>Operator</th>
+                    <th>Platform</th>
+                    <th>Delay</th>
+                </tr>
+
+                <tbody id="train_values">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="main.js" defer></script>
+    
+</body>
+</html>
